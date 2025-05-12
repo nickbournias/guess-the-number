@@ -18,21 +18,17 @@
                         <div class="d-flex align-items-center">
                             <h5 class="me-4">How many numbers?:</h5>
                             <input id='rangeInput' type="number" class="form-control me-4" style="width: 100px;">
+                            <button onclick="randomize(); fadeAway();" type="button" class="btn btn-primary ms-auto" style="width: 200px; align-items: center;">Randomize</button>
                         </div>
                             <p id="rangeText" style="color: grey; font-weight: bold;"></p>
-                        <br>
-                        <div class= "d-flex justify-content-center">
-                            <button onclick="randomize(); fadeAway();" type="button" class="btn btn-primary" style="width: 300px; align-items: center;">Randomize</button>
-                        </div>
                             <p id="statusMessage" class="d-flex align-items-center justify-content-center">
-                                <span id="statusText" class="fade-text"></span>
+                            <span id="statusText" class="fade-text"></span>
                             </p>
-                        <br>
                         <br>
                         <div class="d-flex align-items-center">
                             <h5 class="me-4">Enter your guess:</h5>
                             <input id="guessInput" type="number" class="form-control me-4" style="width: 100px;">
-                            <button onclick="postResults()" type="button" class="btn btn-secondary" style="width: 200px;">Submit</button>
+                            <button onclick="postResults()" type="button" class="btn btn-secondary ms-auto" style="width: 200px;">Submit</button>
                         </div>
                         <p id="guessOutput" style="font-weight: bold";></p>
                         <p id="resultsText" style="font-weight: bold";></p>

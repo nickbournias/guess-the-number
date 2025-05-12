@@ -52,28 +52,6 @@ function postResults() {
         document.getElementById('resultsText').innerText = "Try again";
         document.getElementById('resultsText').style.color = 'red';
     }
-
 }
-
-function fadeAway() {
-    let msg = document.getElementById('statusMessage');
-    msg.classList.remove('hidden');  // Reset first
-
-    // Set text & color
-    msg.innerText = "(number updated)";
-    msg.style.color = 'blue';
-
-    // Force reflow (important!)
-    void msg.offsetWidth;
-
-    // Trigger fade
-    msg.classList.add('hidden');
-
-    // OPTIONAL: clear text after fade
-    setTimeout(() => {
-        msg.innerText = "";
-    }, 2000);
-}
-
 
 
